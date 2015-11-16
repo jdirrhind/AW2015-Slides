@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artemis War 2015</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Artemis War 2015">
+  <meta name="author" content="">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/custom.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Artemis War 2015</h1>
+    <h2>Visualising War Points</h2>
+    <p><br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h3>Pardus, War and War Points</h3>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Pardus: a graphical Massive Multiplayer Online Browser Game</li>
+<li>Set in a futuristic universe where all players pilot a space ship</li>
+<li>Players of three factions strive to gain wealth and fame</li>
+<li>Various professions: traders, fighters, pirates, smugglers, other...</li>
+</ul>
+
+<h4>2015: War in the Artemis Universe</h4>
+
+<ul>
+<li>September 2015: War breaks out between the Federation and the Union</li>
+<li>October 2015: The Empire declares war on the Federation in response</li>
+</ul>
+
+<h4>Faction members earn war points for their heroic actions</h4>
+
+<ul>
+<li>Q. How to track the three factions&#39; progress during the two concurrent wars?</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h4>Data Gathering</h4>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Data screen-scraped from the game&#39;s web pages</li>
+</ul>
+
+<pre><code>##    SkirmishID CaptureDate    Faction Points Kills Structures Missions Sectors
+## 71         FE  2015-11-10 Federation 191612 71517      39995    80100       0
+## 72         FE  2015-11-10     Empire 234582 92409      57573    49600   35000
+## 73         FE  2015-11-11 Federation 199452 72857      39995    86600       0
+## 74         FE  2015-11-11     Empire 240464 96009      57855    51600   35000
+</code></pre>
+
+<p><img src="assets/fig/FedEmpWarPoints-1.png" alt="plot of chunk FedEmpWarPoints"> </p>
+
+<ul>
+<li>Started off with one-off graph plots, then evolved into...</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h4>Shiny Application</h4>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/shinyapp.png" alt="Image of Shiny Application"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h4>Rounding Off</h4>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Simple plots evolved into more complex plots</li>
+<li>War points often required breakdown by category (kills, missions, sectors captured)</li>
+<li>Gathered data used to derive trend lines</li>
+<li>Daily differences visualised to establish which faction has the momentum</li>
+<li>Shiny enlisted to turn these requirements into a web application</li>
+<li>Interactive plots
+
+<ul>
+<li>Clearer progress analysis</li>
+<li>Aid to strategic planning</li>
+<li>Hours of fun</li>
+</ul></li>
+<li>Try the application out at <a href="https://jdirrhind.shinyapps.io/ArtemisWar2015">Shinyapps.io</a></li>
+<li>View the source code on <a href="https://github.com/jdirrhind/ArtemisWar2015">GitHub</a></li>
+<li>This presentation built using <a href="http://slidify.org">Slidify</a>. Thanks for reviewing!</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Pardus, War and War Points'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data Gathering'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Shiny Application'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Rounding Off'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
